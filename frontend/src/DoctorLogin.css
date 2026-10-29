@@ -1,0 +1,116 @@
+
+.doctor-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f8f6f3;
+  color: #292321;
+  font-family: Arial, sans-serif;
+}
+
+.doctor-login-panel {
+  width: 100%;
+  max-width: 440px;
+  padding: clamp(24px, 5vw, 42px);
+  border: 1px solid #e9e0dc;
+  border-radius: 14px;
+  background: #fffdfb;
+}
+
+.doctor-login-back {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #762d3b;
+  cursor: pointer;
+}
+
+.doctor-login-mark {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-top: 34px;
+  border-radius: 12px;
+  background: #762d3b;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.doctor-login-eyebrow {
+  margin-top: 25px;
+  color: #762d3b;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.doctor-login-panel h1 {
+  margin: 12px 0;
+  font-size: 30px;
+}
+
+.doctor-login-description,
+.doctor-login-footer {
+  color: #817570;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.doctor-login-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.doctor-login-panel label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.doctor-login-panel input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #e1d7d2;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+}
+
+.doctor-login-panel input:focus {
+  outline: 2px solid #762d3b;
+  outline-offset: 2px;
+}
+
+.doctor-login-submit {
+  margin-top: 14px;
+  padding: 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #762d3b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.doctor-login-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.doctor-login-error {
+  color: #a12626;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.doctor-login-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+}

@@ -1,0 +1,277 @@
+
+.lp-page {
+  min-height: 100vh;
+  background: #f8f6f1;
+  color: #27211f;
+  font-family: "DM Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-header {
+  min-height: 76px;
+  padding: 0 7%;
+  border-bottom: 1px solid #e8dfd6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.lp-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 0;
+  background: transparent;
+  color: #302522;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lp-brand-mark {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #722d3b;
+  color: #fffaf4;
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+.lp-ai {
+  color: #8a4a56;
+  font-weight: 500;
+}
+
+.lp-header-note,
+.lp-eyebrow {
+  color: #8a4a56;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.lp-content {
+  width: min(1050px, 86%);
+  margin: auto;
+  padding: 72px 0;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.lp-intro h1 {
+  margin: 22px 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 4.5vw, 58px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.lp-intro > p {
+  max-width: 430px;
+  color: #706761;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.lp-note {
+  margin-top: 34px;
+  padding: 17px;
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  border-left: 3px solid #8b4653;
+  background: #f0ebe4;
+  color: #635650;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.lp-note-mark {
+  color: #8b4653;
+  font-size: 19px;
+}
+
+.lp-form {
+  padding: 34px;
+  background: #fffdfa;
+  border: 1px solid #e9e0d7;
+  box-shadow: 0 14px 45px rgba(53, 35, 27, 0.06);
+}
+
+.lp-form-heading {
+  margin-bottom: 27px;
+}
+
+.lp-form-heading h2 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.lp-form-heading p {
+  margin: 0;
+  color: #80756e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.lp-form label {
+  display: block;
+  margin: 20px 0 8px;
+  color: #403631;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lp-form input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #ded4cb;
+  border-radius: 2px;
+  background: #fff;
+  color: #302522;
+  font: inherit;
+  font-size: 14px;
+}
+
+.lp-form input:focus {
+  outline: 2px solid #b77d86;
+  outline-offset: 1px;
+  border-color: #8b4653;
+}
+
+.lp-submit {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 26px;
+  padding: 13px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: #722d3b;
+  color: #fffaf4;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lp-submit:hover {
+  background: #57212d;
+}
+
+.lp-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.lp-error {
+  margin: 14px 0 0;
+  padding: 11px 12px;
+  border-left: 3px solid #b43e3e;
+  background: #fbefed;
+  color: #9d2929;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.lp-switch {
+  margin: 24px 0 0;
+  color: #80756e;
+  text-align: center;
+  font-size: 13px;
+}
+
+.lp-switch button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #722d3b;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lp-footer {
+  min-height: 62px;
+  padding: 0 7%;
+  border-top: 1px solid #e8dfd6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: #897d75;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+}
+
+.lp-footer span:first-child {
+  color: #722d3b;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 760px) {
+  .lp-header {
+    min-height: 66px;
+    padding: 0 5%;
+  }
+
+  .lp-content {
+    width: 90%;
+    padding: 42px 0;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .lp-intro h1 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
+
+  .lp-intro > p {
+    font-size: 15px;
+  }
+
+  .lp-note {
+    margin-top: 22px;
+  }
+
+  .lp-form {
+    padding: 25px 21px;
+  }
+
+  .lp-footer {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .lp-header-note {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .lp-brand {
+    font-size: 17px;
+  }
+
+  .lp-form {
+    padding: 22px 16px;
+  }
+}
